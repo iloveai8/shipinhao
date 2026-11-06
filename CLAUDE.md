@@ -47,6 +47,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - 素材：`product-01-packaging.jpg`、`firstframe-pavilion.jpg`、`tail-01.jpg`
 - 产出：`clip-01.mp4`、`brand-product-15s-v1.mp4`（改版递增 v2、v3）、`cover-9x16.jpg`
 
+# 进度记录（自动）
+
+- 运行 `.\status.ps1`（在 `E:\视频号\` 下）会扫描各产品目录的实际文件，输出每步 ✅/⬜ 和「下一步建议」，并附带 git 状态；它不修改任何文件。
+- 每次新增或删除素材、产出后，同步更新该产品 `resources.md` 的素材/产出表，保证文档与目录一致。
+- 草稿、候选图、备份文件不保留：定稿直接覆盖同名文件；只有「两个版本都要交付」时才用 `-v1` / `-v2` 编号。
+
 # 合规红线（食品类广告）
 
 - 禁用绝对化用语（「最」「第一」等）

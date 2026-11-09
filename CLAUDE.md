@@ -50,7 +50,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 # 进度记录（自动）
 
 - 运行 `.\status.ps1`（在 `E:\视频号\` 下）会扫描各产品目录的实际文件，输出每步 ✅/⬜ 和「下一步建议」，并附带 git 状态；它不修改任何文件。
+- 注意：`status.ps1` 的检查清单（`$checks`）是按 guxiaoyuan-longan 的三段方案硬编码的（首帧文件名、段数、实拍插入镜文件名）；新产品开工时需同步更新该清单，否则进度报告不准。
 - 每次新增或删除素材、产出后，同步更新该产品 `resources.md` 的素材/产出表，保证文档与目录一致。
+- 中断/收工时，在该产品 `resources.md` 末尾维护「断点记录」（已完成 / 卡点 / 下次继续）；恢复工作时先读这一节再动手，参见 `guxiaoyuan-longan/resources.md` 第七节的现成格式。
 - 草稿、候选图、备份文件不保留：定稿直接覆盖同名文件；只有「两个版本都要交付」时才用 `-v1` / `-v2` 编号。
 
 # 合规红线（食品类广告）
